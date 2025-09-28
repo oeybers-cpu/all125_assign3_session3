@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
@@ -88,6 +87,10 @@
             background: rgba(255, 165, 0, 0.2);
             color: white;
             font-weight: 700;
+        }
+        .nav a.external-link {
+            color: #00FF00;
+            font-weight: bold;
         }
         .nav h3 {
             color: #FFFFFF;
@@ -361,6 +364,7 @@
                 <li><a href="#data-identification">Data Identification</a></li>
                 <li><a href="#team-roles">Team Roles</a></li>
                 <li><a href="#steps-to-be-taken">Steps to be Taken</a></li>
+                <li><a href="https://clickup.up.ac.za/ultra/courses/_181354_1/outline" target="_blank" class="external-link">Assignment Instructions</a></li>
             </ul>
         </div>
         <div class="main">
@@ -373,7 +377,7 @@
             </div>
             <section id="topic-finalisation" class="active">
                 <h2>Topic Finalisation</h2>
-                <p>Teams must finalise their chosen topic. This can be any debatable issue of your choice. Write your team's chosen topic and decisions below.</p>
+                <p>Teams must finalise their chosen topic. Focus on the theme, identify the problem, and specify the argument you're addressing. Write your team's chosen topic and decisions below.</p>
                 <div class="language-selector">
                     <label for="topicLanguage">Language:</label>
                     <select id="topicLanguage" onchange="updateTopicPlaceholder()">
@@ -381,7 +385,7 @@
                         <option value="se">Sepedi</option>
                     </select>
                 </div>
-                <textarea id="topicFinalisation" placeholder="Type your topic and decisions here..."></textarea>
+                <textarea id="topicFinalisation" placeholder="Focus on the theme, identify the problem, and specify the argument you're addressing. Type your topic and decisions here..."></textarea>
                 <div class="action-buttons">
                     <button class="download-btn" onclick="downloadSpecificNotes('topicFinalisation')">Download Notes</button>
                     <p class="note-message" style="margin-top: 10px; color: #555;">Your notes will be saved as a .txt file on your device.</p>
@@ -389,7 +393,7 @@
             </section>
             <section id="thesis-finalisation">
                 <h2>Thesis Finalisation</h2>
-                <p>State your team's clear position on the chosen topic. This should be a concise statement that takes a specific stance on the issue.</p>
+                <p>State your team's clear position on the chosen topic. Ensure you've identified the problem and specified the argument you're addressing. Write your thesis statement here.</p>
                 <div class="language-selector">
                     <label for="thesisLanguage">Language:</label>
                     <select id="thesisLanguage" onchange="updateThesisPlaceholder()">
@@ -397,7 +401,7 @@
                         <option value="se">Sepedi</option>
                     </select>
                 </div>
-                <textarea id="thesisFinalisation" placeholder="Type your thesis statement here..."></textarea>
+                <textarea id="thesisFinalisation" placeholder="Focus on the theme, identify the problem, and specify the argument you're addressing. Type your thesis statement here..."></textarea>
                 <div class="action-buttons">
                     <button class="download-btn" onclick="downloadSpecificNotes('thesisFinalisation')">Download Notes</button>
                     <p class="note-message" style="margin-top: 10px; color: #555;">Your notes will be saved as a .txt file on your device.</p>
@@ -405,7 +409,7 @@
             </section>
             <section id="thesis-justification">
                 <h2>Thesis Justification</h2>
-                <p>List 2-3 main reasons supporting your thesis. These should be strong, evidence-based points that form the core of your argument.</p>
+                <p>List 2-3 main reasons supporting your thesis. Focus on how these reasons address the problem you've identified. Write your main reasons here.</p>
                 <div class="language-selector">
                     <label for="justificationLanguage">Language:</label>
                     <select id="justificationLanguage" onchange="updateJustificationPlaceholder()">
@@ -413,7 +417,7 @@
                         <option value="se">Sepedi</option>
                     </select>
                 </div>
-                <textarea id="thesisJustification" placeholder="Enter your main reasons here..."></textarea>
+                <textarea id="thesisJustification" placeholder="Focus on how your reasons address the problem. List 2-3 main reasons supporting your thesis here..."></textarea>
                 <div class="action-buttons">
                     <button class="download-btn" onclick="downloadSpecificNotes('thesisJustification')">Download Notes</button>
                     <p class="note-message" style="margin-top: 10px; color: #555;">Your notes will be saved as a .txt file on your device.</p>
@@ -421,7 +425,7 @@
             </section>
             <section id="data-identification">
                 <h2>Data Identification</h2>
-                <p>Identify qualitative and quantitative data from any sources. This data can come from any articles you choose to use for your presentation.</p>
+                <p>Identify qualitative and quantitative data that supports your argument. Ensure the data directly addresses the problem you've identified. List data sources and how they support your argument.</p>
                 <div class="language-selector">
                     <label for="dataLanguage">Language:</label>
                     <select id="dataLanguage" onchange="updateDataPlaceholder()">
@@ -429,7 +433,7 @@
                         <option value="se">Sepedi</option>
                     </select>
                 </div>
-                <textarea id="dataIdentification" placeholder="List data sources and how they support your argument..."></textarea>
+                <textarea id="dataIdentification" placeholder="Focus on how the data addresses the problem. List data sources and how they support your argument..."></textarea>
                 <div class="action-buttons">
                     <button class="download-btn" onclick="downloadSpecificNotes('dataIdentification')">Download Notes</button>
                     <p class="note-message" style="margin-top: 10px; color: #555;">Your notes will be saved as a .txt file on your device.</p>
@@ -437,7 +441,7 @@
             </section>
             <section id="team-roles">
                 <h2>Team Roles</h2>
-                <p>Assign specific roles to each team member. Examples: Leader, Researcher, Visual Designer, Translator, AI Image Generator, Presenter.</p>
+                <p>Assign specific roles to each team member. Ensure each role contributes to addressing the problem and building the argument. Examples: Leader, Researcher, Visual Designer, Translator, AI Image Generator, Presenter.</p>
                 <div class="language-selector">
                     <label for="rolesLanguage">Language:</label>
                     <select id="rolesLanguage" onchange="updateRolesPlaceholder()">
@@ -445,7 +449,7 @@
                         <option value="se">Sepedi</option>
                     </select>
                 </div>
-                <textarea id="teamRoles" placeholder="List roles and assigned members here..."></textarea>
+                <textarea id="teamRoles" placeholder="Focus on how each role addresses the problem. List roles and assigned members here..."></textarea>
                 <div class="action-buttons">
                     <button class="download-btn" onclick="downloadSpecificNotes('teamRoles')">Download Notes</button>
                     <p class="note-message" style="margin-top: 10px; color: #555;">Your notes will be saved as a .txt file on your device.</p>
@@ -453,7 +457,7 @@
             </section>
             <section id="steps-to-be-taken">
                 <h2>Steps to be Taken</h2>
-                <p>Outline the specific tasks and deadlines for each team member. Include timelines and milestones for preparation.</p>
+                <p>Outline the specific tasks and deadlines for each team member. Ensure each task contributes to addressing the problem and building the argument. List tasks, responsible members, and deadlines.</p>
                 <div class="language-selector">
                     <label for="stepsLanguage">Language:</label>
                     <select id="stepsLanguage" onchange="updateStepsPlaceholder()">
@@ -461,7 +465,7 @@
                         <option value="se">Sepedi</option>
                     </select>
                 </div>
-                <textarea id="stepsTaken" placeholder="List tasks, responsible members, and deadlines..."></textarea>
+                <textarea id="stepsTaken" placeholder="Focus on how each task addresses the problem. List tasks, responsible members, and deadlines..."></textarea>
                 <div class="action-buttons">
                     <button class="download-btn" onclick="downloadSpecificNotes('stepsTaken')">Download Notes</button>
                     <p class="note-message" style="margin-top: 10px; color: #555;">Your notes will be saved as a .txt file on your device.</p>
@@ -482,7 +486,7 @@
             topic: "Ea hloka go fihla dipolotiki tsa go tlogela. Bua le kgwebo e ka nna lekgwetšo. Ea tlogela dipolotiki tsa go tlogela le dipolelo tsa go tlogela.",
             thesis: "Ea hloka go fihla lebaka la go tlogela. Bua lebaka la go tlogela le go tlogela lekgwetšo.",
             justification: "Ea hloka go fihla dipolelo tsa go tlogela. Bua dipolelo tsa go tlogela tsa go tlogela lekgwetšo.",
-            data: "Ea hloka go fihla dipolotiki tsa data. Bua data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data......<think>
+            data: "Ea hloka go fihla dipolotiki tsa data. Bua data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data......<think>
 
         // Function to update all placeholders to Sepedi or English
         function updateTopicPlaceholder() {
@@ -492,7 +496,7 @@
             if (language === 'se') {
                 textarea.placeholder = "Ea hloka go fihla dipolotiki tsa go tlogela. Bua le kgwebo e ka nna lekgwetšo. Ea tlogela dipolotiki tsa go tlogela le dipolelo tsa go tlogela.";
             } else {
-                textarea.placeholder = "Type your topic and decisions here...";
+                textarea.placeholder = "Focus on the theme, identify the problem, and specify the argument you're addressing. Type your topic and decisions here...";
             }
         }
         
@@ -503,7 +507,7 @@
             if (language === 'se') {
                 textarea.placeholder = "Ea hloka go fihla lebaka la go tlogela. Bua lebaka la go tlogela le go tlogela lekgwetšo.";
             } else {
-                textarea.placeholder = "Type your thesis statement here...";
+                textarea.placeholder = "Focus on the theme, identify the problem, and specify the argument you're addressing. Type your thesis statement here...";
             }
         }
         
@@ -514,7 +518,7 @@
             if (language === 'se') {
                 textarea.placeholder = "Ea hloka go fihla dipolelo tsa go tlogela. Bua dipolelo tsa go tlogela tsa go tlogela lekgwetšo.";
             } else {
-                textarea.placeholder = "Enter your main reasons here...";
+                textarea.placeholder = "Focus on how your reasons address the problem. List 2-3 main reasons supporting your thesis here...";
             }
         }
         
@@ -523,10 +527,9 @@
             const textarea = document.getElementById('dataIdentification');
             
             if (language === 'se') {
-                textarea.placeholder = "Ea hloka go fihla dipolotiki tsa data. Bua data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa......<think>
-
+                textarea.placeholder = "Ea hloka go fihla dipolotiki tsa data. Bua data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data......";
             } else {
-                textarea.placeholder = "List data sources and how they support your argument...";
+                textarea.placeholder = "Focus on how the data addresses the problem. List data sources and how they support your argument...";
             }
         }
         
@@ -537,7 +540,7 @@
             if (language === 'se') {
                 textarea.placeholder = "Bua dipolelo tsa kgwebo le dipolelo tsa go tlogela lekgwetšo.";
             } else {
-                textarea.placeholder = "List roles and assigned members here...";
+                textarea.placeholder = "Focus on how each role addresses the problem. List roles and assigned members here...";
             }
         }
         
@@ -548,7 +551,7 @@
             if (language === 'se') {
                 textarea.placeholder = "Bua dipolelo tsa go tlogela le kgwebo e ka nna lekgwetšo.";
             } else {
-                textarea.placeholder = "List tasks, responsible members, and deadlines...";
+                textarea.placeholder = "Focus on how each task addresses the problem. List tasks, responsible members, and deadlines...";
             }
         }
         
@@ -564,6 +567,12 @@
             
             navLinks.forEach(link => {
                 link.addEventListener('click', function(e) {
+                    // Check if this is an external link
+                    if (this.classList.contains('external-link')) {
+                        window.open(this.href, '_blank');
+                        return;
+                    }
+                    
                     e.preventDefault();
                     const targetId = this.getAttribute('href').substring(1);
                     navLinks.forEach(navLink => navLink.classList.remove('active'));
@@ -599,4 +608,3 @@
     </script>
 </body>
 </html>
-```
