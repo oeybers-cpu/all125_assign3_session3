@@ -1,9 +1,10 @@
+```html
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 5 Preparation Tool</title>
+    <title>ALL 125 Assignment Preparation Tool</title>
     <style>
         :root {
             --dark-blue: #00008B;
@@ -352,238 +353,118 @@
 <body>
     <div class="container">
         <div class="nav">
-            <h3>Assignment 5 Preparation Tool</h3>
+            <h3>ALL 125 Preparation Tool</h3>
             <ul>
-                <li><a href="#instructions" class="active">Instructions</a></li>
-                <li><a href="#notes">Notes</a></li>
-                <li><a href="#reflective">Reflective Questions</a></li>
-                <li><a href="#visuals">Visual Aid Guide</a></li>
-                <li><a href="#counterarguments">Counterargument Help</a></li>
-                <li><a href="#team-coord">Team Coordination</a></li>
-                <li><a href="#conclusion">Conclusion Tips</a></li>
-                <li><a href="#extra-credit">Extra Credit</a></li>
+                <li><a href="#topic-finalisation" class="active">Topic Finalisation</a></li>
+                <li><a href="#thesis-finalisation">Thesis Finalisation</a></li>
+                <li><a href="#thesis-justification">Thesis Justification</a></li>
+                <li><a href="#data-identification">Data Identification</a></li>
+                <li><a href="#team-roles">Team Roles</a></li>
+                <li><a href="#steps-to-be-taken">Steps to be Taken</a></li>
             </ul>
         </div>
         <div class="main">
             <div class="section-header">
-                <h2>Assignment 5 Preparation Tool</h2>
-                <p>Helping students prepare for the Argumentation Presentation assignment. Navigate through the sections to learn about requirements, tips, and best practices.</p>
+                <h2>ALL 125 Argumentation Presentation Preparation</h2>
+                <p>Helping students prepare for the ALL 125 Argumentation Presentation assignment. Navigate through the sections to plan your presentation.</p>
             </div>
             <div class="progress-bar">
                 <div class="progress-fill" id="progress"></div>
             </div>
-            <section id="instructions" class="active">
-                <h2>Assignment 5 Instructions</h2>
-                <p>Develop a structured argumentative presentation on a topic of your choice. You may use any relevant sources for your evidence.</p>
-                <div class="stats-card">
-                    <h3>Core Requirements</h3>
-                    <ul class="stats-list">
-                        <li><strong>Team size:</strong> 3–5 students</li>
-                        <li><strong>Position:</strong> Take a clear position on a debatable issue</li>
-                        <li><strong>Evidence:</strong> Use any relevant sources (no required texts from previous assignments)</li>
-                        <li><strong>Citations:</strong> Cite sources using <span class="uk-spelling">Harvard style</span> (in-slide or in-narrative)</li>
-                        <li><strong>Visuals:</strong> Include at least one visual (graph, chart, diagram); may use GenAI tools</li>
-                        <li><strong>Counterargument:</strong> Acknowledge and refute one credible counterargument</li>
-                        <li><strong>Teamwork:</strong> Ensure equal contribution from all team members</li>
-                    </ul>
-                </div>
-                <div class="tip">
-                    <h4>Format Guidelines</h4>
-                    <ul>
-                        <li>Max 8–10 minutes presentation</li>
-                        <li>Submit slides or digital narrative link via clickUP (Turnitin-enabled)</li>
-                        <li>Font: Arial/Times New Roman, size ≤12 | Spacing: 1.5 (for supporting documents)</li>
-                    </ul>
-                </div>
-                <div class="stats-card">
-                    <h3>Evaluation Criteria (30 marks total)</h3>
-                    <ul class="stats-list">
-                        <li><strong>Clarity and strength of argument:</strong> 8 marks</li>
-                        <li><strong>Use of evidence from required texts:</strong> 6 marks</li>
-                        <li><strong>Visual aid effectiveness:</strong> 5 marks</li>
-                        <li><strong>Acknowledgement and rebuttal of counterarguments:</strong> 5 marks</li>
-                        <li><strong>Team coordination and contribution:</strong> 4 marks</li>
-                        <li><strong>Strong, concise conclusion:</strong> 2 marks</li>
-                    </ul>
-                </div>
-                <div class="tip">
-                    <h4>Extra Credit Opportunity</h4>
-                    <p>Include two examples of meaningful and effective translanguaging that supports both written text and visual aids.</p>
-                </div>
-                <p><a href="https://clickup.up.ac.za/ultra/courses/_181354_1/outline/assessment/test/_4594308_1?courseId=_181354_1&gradeitemView=details" target="_blank">View Full Assignment Instructions</a></p>
-            </section>
-            <section id="notes">
-                <h2>Take Notes</h2>
-                <p>Use this space to jot down ideas, questions, or reminders. When ready, click "Download Notes" to save them as a text file.</p>
+            <section id="topic-finalisation" class="active">
+                <h2>Topic Finalisation</h2>
+                <p>Teams must finalise their chosen topic. This can be any debatable issue of your choice. Write your team's chosen topic and decisions below.</p>
                 <div class="language-selector">
-                    <label for="notesLanguage">Language:</label>
-                    <select id="notesLanguage" onchange="updateNotesPlaceholder()">
+                    <label for="topicLanguage">Language:</label>
+                    <select id="topicLanguage" onchange="updateTopicPlaceholder()">
                         <option value="en">English</option>
                         <option value="se">Sepedi</option>
                     </select>
                 </div>
-                <textarea id="notesInput" placeholder="Type your notes here..."></textarea>
+                <textarea id="topicFinalisation" placeholder="Type your topic and decisions here..."></textarea>
                 <div class="action-buttons">
-                    <button class="download-btn" onclick="downloadNotes()">Download Notes</button>
+                    <button class="download-btn" onclick="downloadSpecificNotes('topicFinalisation')">Download Notes</button>
                     <p class="note-message" style="margin-top: 10px; color: #555;">Your notes will be saved as a .txt file on your device.</p>
                 </div>
             </section>
-            <section id="reflective">
-                <h2>Reflective Questions</h2>
+            <section id="thesis-finalisation">
+                <h2>Thesis Finalisation</h2>
+                <p>State your team's clear position on the chosen topic. This should be a concise statement that takes a specific stance on the issue.</p>
                 <div class="language-selector">
-                    <label for="reflectiveLanguage">Language:</label>
-                    <select id="reflectiveLanguage" onchange="updateReflectivePlaceholder()">
+                    <label for="thesisLanguage">Language:</label>
+                    <select id="thesisLanguage" onchange="updateThesisPlaceholder()">
                         <option value="en">English</option>
                         <option value="se">Sepedi</option>
                     </select>
                 </div>
-                <div class="stats-card">
-                    <h3>Individual Reflection</h3>
-                    <p id="reflectiveQuestion1">Before collaborating as a team, consider:</p>
-                    <ul id="reflectiveList1">
-                        <li>What specific role will you take in the team, and how will you ensure your contribution is equal to others?</li>
-                    </ul>
-                </div>
-                <div class="stats-card">
-                    <h3>Team Reflection Questions</h3>
-                    <ol id="reflectiveList2">
-                        <li>How will your team structure the presentation to cover all evaluation criteria effectively?</li>
-                        <li>What strategies will you use to acknowledge and refute counterarguments in your presentation?</li>
-                        <li>How will you integrate meaningful translanguaging into both your written text and visual aids to enhance understanding for diverse audiences?</li>
-                    </ol>
+                <textarea id="thesisFinalisation" placeholder="Type your thesis statement here..."></textarea>
+                <div class="action-buttons">
+                    <button class="download-btn" onclick="downloadSpecificNotes('thesisFinalisation')">Download Notes</button>
+                    <p class="note-message" style="margin-top: 10px; color: #555;">Your notes will be saved as a .txt file on your device.</p>
                 </div>
             </section>
-            <section id="visuals">
-                <h2>Visual Aid Guide</h2>
-                <p>Effective visuals strengthen your argument. Follow these guidelines:</p>
+            <section id="thesis-justification">
+                <h2>Thesis Justification</h2>
+                <p>List 2-3 main reasons supporting your thesis. These should be strong, evidence-based points that form the core of your argument.</p>
                 <div class="language-selector">
-                    <label for="visualsLanguage">Language:</label>
-                    <select id="visualsLanguage" onchange="updateVisualsPlaceholder()">
+                    <label for="justificationLanguage">Language:</label>
+                    <select id="justificationLanguage" onchange="updateJustificationPlaceholder()">
                         <option value="en">English</option>
                         <option value="se">Sepedi</option>
                     </select>
                 </div>
-                <div class="grid-container">
-                    <div class="grid-item">
-                        <h4>Relevance</h4>
-                        <p id="visualsRelevance">Ensure visuals directly support your key points (e.g., a graph showing unemployment trends to support an argument about economic policies)</p>
-                    </div>
-                    <div class="grid-item">
-                        <h4>Clarity</h4>
-                        <p id="visualsClarity">Avoid clutter: use clear labels, legends, and concise titles. Remove unnecessary elements that don't contribute to your message.</p>
-                    </div>
-                    <div class="grid-item">
-                        <h4>Acknowledgement</h4>
-                        <p id="visualsAcknowledgement">If using AI-generated visuals (e.g., from Canva, ChatGPT), cite the tool used (e.g., "Generated using Canva AI") in the slide notes</p>
-                    </div>
-                </div>
-                <div class="tip">
-                    <h4>Example Implementation</h4>
-                    <p id="visualsExample">A bar chart comparing corruption levels across countries, with a caption: "Data from Transparency International (2023) shows that countries with strong anti-corruption laws (e.g., Botswana) have lower corruption scores, supporting our argument that systemic reforms are effective."</p>
+                <textarea id="thesisJustification" placeholder="Enter your main reasons here..."></textarea>
+                <div class="action-buttons">
+                    <button class="download-btn" onclick="downloadSpecificNotes('thesisJustification')">Download Notes</button>
+                    <p class="note-message" style="margin-top: 10px; color: #555;">Your notes will be saved as a .txt file on your device.</p>
                 </div>
             </section>
-            <section id="counterarguments">
-                <h2>Counterargument Handling</h2>
-                <p>Effectively addressing counterarguments strengthens your position. Follow this structure:</p>
+            <section id="data-identification">
+                <h2>Data Identification</h2>
+                <p>Identify qualitative and quantitative data from any sources. This data can come from any articles you choose to use for your presentation.</p>
                 <div class="language-selector">
-                    <label for="counterLanguage">Language:</label>
-                    <select id="counterLanguage" onchange="updateCounterPlaceholder()">
+                    <label for="dataLanguage">Language:</label>
+                    <select id="dataLanguage" onchange="updateDataPlaceholder()">
                         <option value="en">English</option>
                         <option value="se">Sepedi</option>
                     </select>
                 </div>
-                <div class="grid-container">
-                    <div class="grid-item">
-                        <h4>Acknowledge</h4>
-                        <p id="counterAcknowledge">Present the opposing view fairly and respectfully. "Some argue that corruption is inevitable in developing nations due to historical factors."</p>
-                    </div>
-                    <div class="grid-item">
-                        <h4>Refute</h4>
-                        <p id="counterRefute">Provide evidence to counter it. "However, data from the World Bank (2022) shows that countries like Rwanda have significantly reduced corruption through targeted reforms, proving systemic change is possible."</p>
-                    </div>
-                    <div class="grid-item">
-                        <h4>Conclude</h4>
-                        <p id="counterConclude">Reinforce your position. "This demonstrates that while corruption is complex, evidence-based policies can drive improvement."</p>
-                    </div>
+                <textarea id="dataIdentification" placeholder="List data sources and how they support your argument..."></textarea>
+                <div class="action-buttons">
+                    <button class="download-btn" onclick="downloadSpecificNotes('dataIdentification')">Download Notes</button>
+                    <p class="note-message" style="margin-top: 10px; color: #555;">Your notes will be saved as a .txt file on your device.</p>
                 </div>
             </section>
-            <section id="team-coord">
-                <h2>Team Coordination</h2>
-                <p>To ensure equal contribution:</p>
+            <section id="team-roles">
+                <h2>Team Roles</h2>
+                <p>Assign specific roles to each team member. Examples: Leader, Researcher, Visual Designer, Translator, AI Image Generator, Presenter.</p>
                 <div class="language-selector">
-                    <label for="teamLanguage">Language:</label>
-                    <select id="teamLanguage" onchange="updateTeamPlaceholder()">
+                    <label for="rolesLanguage">Language:</label>
+                    <select id="rolesLanguage" onchange="updateRolesPlaceholder()">
                         <option value="en">English</option>
                         <option value="se">Sepedi</option>
                     </select>
                 </div>
-                <div class="stats-card">
-                    <h3>Best Practices</h3>
-                    <ul class="stats-list" id="teamBestPractices">
-                        <li><strong>Assign specific roles:</strong> research lead, visual designer, scriptwriter, presenter</li>
-                        <li><strong>Track progress:</strong> use a shared document (e.g., Google Docs) to track contributions and deadlines</li>
-                        <li><strong>Regular check-ins:</strong> hold team meetings to review progress and address issues</li>
-                        <li><strong>Peer evaluation:</strong> use evaluation forms to assess each member's input</li>
-                        <li><strong>Clear deadlines:</strong> set individual milestones for each component of the presentation</li>
-                    </ul>
-                </div>
-                <div class="tip">
-                    <h4>Example Workflow</h4>
-                    <p id="teamWorkflow">"Each member will present a section of the argument, with the research lead providing evidence for all sections. A shared timeline ensures all tasks are completed before the deadline. Weekly check-ins will review progress and adjust as needed."</p>
+                <textarea id="teamRoles" placeholder="List roles and assigned members here..."></textarea>
+                <div class="action-buttons">
+                    <button class="download-btn" onclick="downloadSpecificNotes('teamRoles')">Download Notes</button>
+                    <p class="note-message" style="margin-top: 10px; color: #555;">Your notes will be saved as a .txt file on your device.</p>
                 </div>
             </section>
-            <section id="conclusion">
-                <h2>Conclusion Tips</h2>
-                <p>A strong conclusion should:</p>
+            <section id="steps-to-be-taken">
+                <h2>Steps to be Taken</h2>
+                <p>Outline the specific tasks and deadlines for each team member. Include timelines and milestones for preparation.</p>
                 <div class="language-selector">
-                    <label for="conclusionLanguage">Language:</label>
-                    <select id="conclusionLanguage" onchange="updateConclusionPlaceholder()">
+                    <label for="stepsLanguage">Language:</label>
+                    <select id="stepsLanguage" onchange="updateStepsPlaceholder()">
                         <option value="en">English</option>
                         <option value="se">Sepedi</option>
                     </select>
                 </div>
-                <div class="grid-container">
-                    <div class="grid-item">
-                        <h4>Summarise Key Points</h4>
-                        <p id="conclusionSummary">Briefly recap the main arguments without introducing new information</p>
-                    </div>
-                    <div class="grid-item">
-                        <h4>Restate Position</h4>
-                        <p id="conclusionPosition">Clearly reiterate your stance on the issue</p>
-                    </div>
-                    <div class="grid-item">
-                        <h4>Memorable Closing</h4>
-                        <p id="conclusionClosing">End with a powerful statement or call to action that resonates with your audience</p>
-                    </div>
-                </div>
-                <div class="tip">
-                    <h4>Example Conclusion</h4>
-                    <p id="conclusionExample">"In conclusion, addressing unemployment requires targeted education reforms and entrepreneurship support. As evidenced by our analysis, these strategies not only reduce joblessness but also foster long-term economic resilience. Let us advocate for policy changes that empower communities and drive sustainable growth."</p>
-                </div>
-            </section>
-            <section id="extra-credit">
-                <h2>Extra Credit: Translanguaging</h2>
-                <p>Translanguaging involves strategically using multiple languages to enhance communication. Examples:</p>
-                <div class="language-selector">
-                    <label for="extraLanguage">Language:</label>
-                    <select id="extraLanguage" onchange="updateExtraPlaceholder()">
-                        <option value="en">English</option>
-                        <option value="se">Sepedi</option>
-                    </select>
-                </div>
-                <div class="grid-container">
-                    <div class="grid-item">
-                        <h4>Visual Integration</h4>
-                        <p id="extraVisual">A bilingual chart where key terms are in both English and a local language (e.g., "Unemployment Rates / Ikhetho Lomhlaba" in a South African context)</p>
-                    </div>
-                    <div class="grid-item">
-                        <h4>Narrative Enhancement</h4>
-                        <p id="extraNarrative">Using a phrase in another language for emphasis, then explaining it: "The concept of 'ubuntu' (humanity towards others) underpins our argument for community-driven solutions to corruption"</p>
-                    </div>
-                </div>
-                <div class="tip">
-                    <h4>Key Principle</h4>
-                    <p id="extraPrinciple">Ensure translanguaging is purposeful and supports understanding, not just for show. Cite sources where language use is relevant to your argument.</p>
+                <textarea id="stepsTaken" placeholder="List tasks, responsible members, and deadlines..."></textarea>
+                <div class="action-buttons">
+                    <button class="download-btn" onclick="downloadSpecificNotes('stepsTaken')">Download Notes</button>
+                    <p class="note-message" style="margin-top: 10px; color: #555;">Your notes will be saved as a .txt file on your device.</p>
                 </div>
             </section>
         </div>
@@ -598,63 +479,124 @@
     <script>
         // Sepedi translations
         const seTranslations = {
-            notes: "Ea hloka go tlogela dipolotiki, dipolelo, kapa dipolelo tsa go tlogela. Ka lebaka la go rata, eka 'Download Notes' go thoma dipolotiki ka tlhagiso ya .txt.",
-            reflectiveQuestion1: "Ntle ya go tswela ka thuto, go fihla:",
-            reflectiveList1: [
-                "Ke kgwebo ke kgwebo efe e ka nna lekgwetšo, le go nna le kgwebo e kgolo ka lekgwetšo?",
-                "Ke kgwebo ke kgwebo efe e ka nna lekgwetšo, le go nna le kgwebo e kgolo ka lekgwetšo?"
-            ],
-            reflectiveList2: [
-                "Go lebaka la go tsamaya ka thuto, eka go tsamaya ka lebaka la go tsamaya ka thuto?",
-                "Ke dipolelo tse di fihlelang tse di ka nna le kgwebo e kgolo ka lekgwetšo?",
-                "Go lebaka la go tsamaya ka thuto, eka go tsamaya ka lebaka la go tsamaya ka thuto?"
-            ],
-            visualsRelevance: "Go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le......<think>
+            topic: "Ea hloka go fihla dipolotiki tsa go tlogela. Bua le kgwebo e ka nna lekgwetšo. Ea tlogela dipolotiki tsa go tlogela le dipolelo tsa go tlogela.",
+            thesis: "Ea hloka go fihla lebaka la go tlogela. Bua lebaka la go tlogela le go tlogela lekgwetšo.",
+            justification: "Ea hloka go fihla dipolelo tsa go tlogela. Bua dipolelo tsa go tlogela tsa go tlogela lekgwetšo.",
+            data: "Ea hloka go fihla dipolotiki tsa data. Bua data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data......<think>
 
         // Function to update all placeholders to Sepedi or English
-        function updateNotesPlaceholder() {
-            const language = document.getElementById('notesLanguage').value;
-            const textarea = document.getElementById('notesInput');
+        function updateTopicPlaceholder() {
+            const language = document.getElementById('topicLanguage').value;
+            const textarea = document.getElementById('topicFinalisation');
             
             if (language === 'se') {
-                textarea.placeholder = "Ea hloka go tlogela dipolotiki, dipolelo, kapa dipolelo tsa go tlogela. Ka lebaka la go rata, eka 'Download Notes' go thoma dipolotiki ka tlhagiso ya .txt.";
+                textarea.placeholder = "Ea hloka go fihla dipolotiki tsa go tlogela. Bua le kgwebo e ka nna lekgwetšo. Ea tlogela dipolotiki tsa go tlogela le dipolelo tsa go tlogela.";
             } else {
-                textarea.placeholder = "Type your notes here...";
+                textarea.placeholder = "Type your topic and decisions here...";
             }
         }
         
-        function updateReflectivePlaceholder() {
-            const language = document.getElementById('reflectiveLanguage').value;
-            const question1 = document.getElementById('reflectiveQuestion1');
-            const list1 = document.getElementById('reflectiveList1');
-            const list2 = document.getElementById('reflectiveList2');
+        function updateThesisPlaceholder() {
+            const language = document.getElementById('thesisLanguage').value;
+            const textarea = document.getElementById('thesisFinalisation');
             
             if (language === 'se') {
-                question1.textContent = "Ntle ya go tswela ka thuto, go fihla:";
-                list1.innerHTML = "<li>Ke kgwebo ke kgwebo efe e ka nna lekgwetšo, le go nna le kgwebo e kgolo ka lekgwetšo?</li>";
-                list2.innerHTML = `
-                    <li>Go lebaka la go tsamaya ka thuto, eka go tsamaya ka lebaka la go tsamaya ka thuto?</li>
-                    <li>Ke dipolelo tse di fihlelang tse di ka nna le kgwebo e kgolo ka lekgwetšo?</li>
-                    <li>Go lebaka la go tsamaya ka thuto, eka go tsamaya ka lebaka la go tsamaya ka thuto?</li>
-                `;
+                textarea.placeholder = "Ea hloka go fihla lebaka la go tlogela. Bua lebaka la go tlogela le go tlogela lekgwetšo.";
             } else {
-                question1.textContent = "Before collaborating as a team, consider:";
-                list1.innerHTML = "<li>What specific role will you take in the team, and how will you ensure your contribution is equal to others?</li>";
-                list2.innerHTML = `
-                    <li>How will your team structure the presentation to cover all evaluation criteria effectively?</li>
-                    <li>What strategies will you use to acknowledge and refute counterarguments in your presentation?</li>
-                    <li>How will you integrate meaningful translanguaging into both your written text and visual aids to enhance understanding for diverse audiences?</li>
-                `;
+                textarea.placeholder = "Type your thesis statement here...";
             }
         }
         
-        function updateVisualsPlaceholder() {
-            const language = document.getElementById('visualsLanguage').value;
-            const relevance = document.getElementById('visualsRelevance');
-            const clarity = document.getElementById('visualsClarity');
-            const acknowledgement = document.getElementById('visualsAcknowledgement');
-            const example = document.getElementById('visualsExample');
+        function updateJustificationPlaceholder() {
+            const language = document.getElementById('justificationLanguage').value;
+            const textarea = document.getElementById('thesisJustification');
             
             if (language === 'se') {
-                relevance.textContent = "Go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le boh......<think>
-                clarity.textContent = "Go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le boh......
+                textarea.placeholder = "Ea hloka go fihla dipolelo tsa go tlogela. Bua dipolelo tsa go tlogela tsa go tlogela lekgwetšo.";
+            } else {
+                textarea.placeholder = "Enter your main reasons here...";
+            }
+        }
+        
+        function updateDataPlaceholder() {
+            const language = document.getElementById('dataLanguage').value;
+            const textarea = document.getElementById('dataIdentification');
+            
+            if (language === 'se') {
+                textarea.placeholder = "Ea hloka go fihla dipolotiki tsa data. Bua data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa data tsa......<think>
+
+            } else {
+                textarea.placeholder = "List data sources and how they support your argument...";
+            }
+        }
+        
+        function updateRolesPlaceholder() {
+            const language = document.getElementById('rolesLanguage').value;
+            const textarea = document.getElementById('teamRoles');
+            
+            if (language === 'se') {
+                textarea.placeholder = "Bua dipolelo tsa kgwebo le dipolelo tsa go tlogela lekgwetšo.";
+            } else {
+                textarea.placeholder = "List roles and assigned members here...";
+            }
+        }
+        
+        function updateStepsPlaceholder() {
+            const language = document.getElementById('stepsLanguage').value;
+            const textarea = document.getElementById('stepsTaken');
+            
+            if (language === 'se') {
+                textarea.placeholder = "Bua dipolelo tsa go tlogela le kgwebo e ka nna lekgwetšo.";
+            } else {
+                textarea.placeholder = "List tasks, responsible members, and deadlines...";
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav a');
+            const sections = document.querySelectorAll('.main section');
+            const progressFill = document.getElementById('progress');
+            
+            window.addEventListener('scroll', function() {
+                const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+                progressFill.style.width = scrollPercent + '%';
+            });
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    navLinks.forEach(navLink => navLink.classList.remove('active'));
+                    this.classList.add('active');
+                    sections.forEach(sec => sec.classList.remove('active'));
+                    document.getElementById(targetId).classList.add('active');
+                    document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+            
+            document.getElementById('topic-finalisation').classList.add('active');
+            progressFill.style.width = '0%';
+        });
+        
+        function downloadSpecificNotes(id) {
+            const notes = document.getElementById(id).value;
+            if (!notes.trim()) {
+                alert('Please enter notes before downloading.');
+                return;
+            }
+            const blob = new Blob([notes], { type: 'text/plain' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = `${id}_notes.txt`;
+            document.body.appendChild(a);
+            a.click();
+            setTimeout(() => {
+                document.body.removeChild(a);
+                URL.revokeObjectURL(a.href);
+            }, 0);
+            alert(`Notes for ${id} downloaded successfully as ${id}_notes.txt`);
+        }
+    </script>
+</body>
+</html>
+```
