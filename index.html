@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALL 125 Assignment Preparation Tool</title>
+    <title>ALL 125 Assignment 3 Preparation Tool</title>
     <style>
         :root {
             --dark-blue: #00008B;
@@ -88,10 +88,6 @@
             color: white;
             font-weight: 700;
         }
-        .nav a.external-link {
-            color: #00FF00;
-            font-weight: bold;
-        }
         .nav h3 {
             color: #FFFFFF;
             margin-bottom: 1.5rem;
@@ -147,11 +143,6 @@
             padding-bottom: 0.6rem;
             margin-top: 0;
             font-size: 1.4rem;
-        }
-        .main section h3 {
-            color: var(--dark-blue);
-            margin-top: 1.5rem;
-            font-size: 1.2rem;
         }
         button {
             background: var(--accent-orange);
@@ -256,21 +247,6 @@
             margin-bottom: 0.5rem;
             font-size: 1.1rem;
         }
-        .language-selector {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
-            gap: 10px;
-        }
-        .language-selector label {
-            font-weight: 600;
-            color: var(--dark-blue);
-        }
-        .language-selector select {
-            padding: 0.5rem;
-            border: 1px solid var(--gray-border);
-            border-radius: 4px;
-        }
         @media (max-width: 1024px) {
             .container {
                 flex-direction: column;
@@ -310,10 +286,6 @@
             }
             .tip {
                 padding: 1rem;
-            }
-            .language-selector {
-                flex-direction: column;
-                align-items: flex-start;
             }
         }
         .progress-bar {
@@ -356,257 +328,142 @@
 <body>
     <div class="container">
         <div class="nav">
-            <h3>ALL 125 Preparation Tool</h3>
+            <h3>ALL 125 Assignment 3 Preparation Tool</h3>
             <ul>
-                <li><a href="#instructions" class="active">Instructions</a></li>
-                <li><a href="#notes">Notes</a></li>
-                <li><a href="#reflective">Reflective Questions</a></li>
-                <li><a href="#visuals">Visual Aid Guide</a></li>
-                <li><a href="#counterarguments">Argument Comparison</a></li>
-                <li><a href="#team-coord">Team Coordination</a></li>
-                <li><a href="#conclusion">Conclusion Tips</a></li>
-                <li><a href="#extra-credit" class="external-link">GenAI & Translanguaging</a></li>
+                <li><a href="#topic-finalisation" class="active">Topic Finalisation</a></li>
+                <li><a href="#thesis-finalisation">Thesis Finalisation</a></li>
+                <li><a href="#thesis-justification">Thesis Justification</a></li>
+                <li><a href="#data-identification">Data Identification</a></li>
+                <li><a href="#team-roles">Team Roles</a></li>
+                <li><a href="#steps-to-be-taken">Steps to be Taken</a></li>
+                <li><a href="#assignment-instructions">Assignment Instructions</a></li>
             </ul>
         </div>
         <div class="main">
             <div class="section-header">
-                <h2>ALL 125 Assignment Preparation Tool</h2>
-                <p>Helping students prepare for the Group Presentation assignment. Navigate through the sections to learn about requirements, tips, and best practices.</p>
+                <h2>ALL 125 Assignment 3 Preparation Tool</h2>
+                <p>Helping teams structure their Group Presentation. Navigate through the sections to plan each component.</p>
             </div>
             <div class="progress-bar">
                 <div class="progress-fill" id="progress"></div>
             </div>
-            <section id="instructions" class="active">
-                <h2>Assignment Instructions</h2>
-                <p>Prepare a 10-minute presentation that compares and contrasts the articles you each prepared individually for the Reading Reflection. Each group should focus on a shared theme, drawing connections across your selected articles.</p>
-                <div class="stats-card">
-                    <h3>Core Requirements</h3>
-                    <ul class="stats-list">
-                        <li><strong>Team size:</strong> 3–5 students</li>
-                        <li><strong>Length:</strong> Maximum 10 minutes</li>
-                        <li><strong>Format:</strong> Recorded presentation uploaded to ClickUP</li>
-                        <li><strong>Content:</strong> Demonstrate how your team's personal, cultural, and disciplinary perspectives shape interpretation of articles</li>
-                        <li><strong>GenAI Image:</strong> Include a GenAI-generated image that captures the collective theme</li>
-                        <li><strong>Translanguaging:</strong> Accompany the image with one sentence in a primary language spoken by a group member, along with English interpretation</li>
-                    </ul>
-                </div>
-                <div class="stats-card">
-                    <h3>Evaluation Criteria (30 marks total)</h3>
-                    <ul class="stats-list">
-                        <li><strong>Interpretation and engagement:</strong> 10 marks</li>
-                        <li><strong>Personal, cultural, and disciplinary reflection:</strong> 8 marks</li>
-                        <li><strong>Argumentation and comparison:</strong> 4 marks</li>
-                        <li><strong>GenAI image and translanguaging:</strong> 4 marks</li>
-                        <li><strong>Presentation structure and clarity:</strong> 4 marks</li>
-                    </ul>
-                </div>
-                <div class="tip">
-                    <h4>Submission Guidelines</h4>
-                    <ul>
-                        <li>Submit PowerPoint outline of your presentation on ClickUP before the deadline</li>
-                        <li>Presentations should be recorded and uploaded, rather than delivered live in class</li>
-                    </ul>
-                </div>
-            </section>
-            <section id="notes">
-                <h2>Take Notes</h2>
-                <p>Use this space to jot down ideas, questions, or reminders. When ready, click "Download Notes" to save them as a text file.</p>
-                <div class="language-selector">
-                    <label for="notesLanguage">Language:</label>
-                    <select id="notesLanguage" onchange="updateNotesPlaceholder()">
-                        <option value="en">English</option>
-                        <option value="se">Sepedi</option>
-                    </select>
-                </div>
-                <textarea id="notesInput" placeholder="Type your notes here..."></textarea>
+            <section id="topic-finalisation" class="active">
+                <h2>Topic Finalisation</h2>
+                <p>Teams must finalise their chosen theme from Assignment 2. This will be the shared theme for your group presentation. Write your team's chosen topic below and any decisions made during discussion.</p>
+                <textarea id="topicFinalisation" placeholder="Enter your team's final shared theme and decisions here..."></textarea>
                 <div class="action-buttons">
-                    <button class="download-btn" onclick="downloadNotes()">Download Notes</button>
-                    <p class="note-message" style="margin-top: 10px; color: #555;">Your notes will be saved as a .txt file on your device.</p>
+                    <button class="download-btn" onclick="downloadSpecificNotes('topicFinalisation')">Download Notes</button>
+                    <p class="note-message">Your notes will be saved as a .txt file on your device.</p>
                 </div>
             </section>
-            <section id="reflective">
-                <h2>Reflective Questions</h2>
-                <div class="stats-card">
-                    <h3>Individual Reflection</h3>
-                    <div class="language-selector">
-                        <label for="reflectiveLanguage">Language:</label>
-                        <select id="reflectiveLanguage" onchange="updateReflectivePlaceholder()">
-                            <option value="en">English</option>
-                            <option value="se">Sepedi</option>
-                        </select>
-                    </div>
-                    <p>Before collaborating as a team, consider:</p>
-                    <ul id="individualReflection">
-                        <li>What specific role will you take in the team, and how will you ensure your contribution is equal to others?</li>
+            <section id="thesis-finalisation">
+                <h2>Thesis Finalisation</h2>
+                <p>State your team's clear position on the chosen theme. This should be a concise statement that takes a specific stance on the issue and guides your comparative analysis of the articles.</p>
+                <textarea id="thesisFinalisation" placeholder="Enter your thesis statement for the group presentation here..."></textarea>
+                <div class="action-buttons">
+                    <button class="download-btn" onclick="downloadSpecificNotes('thesisFinalisation')">Download Notes</button>
+                    <p class="note-message">Your notes will be saved as a .txt file on your device.</p>
+                </div>
+            </section>
+            <section id="thesis-justification">
+                <h2>Thesis Justification</h2>
+                <p>List 2-3 main reasons supporting your thesis. These should be strong, evidence-based points that form the core of your comparative analysis of the articles.</p>
+                <textarea id="thesisJustification" placeholder="Enter your main reasons for your thesis here..."></textarea>
+                <div class="action-buttons">
+                    <button class="download-btn" onclick="downloadSpecificNotes('thesisJustification')">Download Notes</button>
+                    <p class="note-message">Your notes will be saved as a .txt file on your device.</p>
+                </div>
+            </section>
+            <section id="data-identification">
+                <h2>Data Identification</h2>
+                <p>Identify qualitative and quantitative data from Assignment 2 articles. Include sources and how they support your comparative analysis of the articles and your thesis statement.</p>
+                <textarea id="dataIdentification" placeholder="List data sources and how they support your comparative analysis..."></textarea>
+                <div class="action-buttons">
+                    <button class="download-btn" onclick="downloadSpecificNotes('dataIdentification')">Download Notes</button>
+                    <p class="note-message">Your notes will be saved as a .txt file on your device.</p>
+                </div>
+            </section>
+            <section id="team-roles">
+                <h2>Team Roles</h2>
+                <p>Assign specific roles to each team member for the presentation. Examples: Presentation Lead, Research Analyst, Visual Designer, Language Specialist (for translanguaging), AI Image Generator, Presenter.</p>
+                <textarea id="teamRoles" placeholder="List roles and assigned members here..."></textarea>
+                <div class="action-buttons">
+                    <button class="download-btn" onclick="downloadSpecificNotes('teamRoles')">Download Notes</button>
+                    <p class="note-message">Your notes will be saved as a .txt file on your device.</p>
+                </div>
+            </section>
+            <section id="steps-to-be-taken">
+                <h2>Steps to be Taken</h2>
+                <p>Outline the specific tasks and deadlines for each team member. Include timelines and milestones for preparing the PowerPoint outline and recording your presentation.</p>
+                <textarea id="stepsTaken" placeholder="List tasks, responsible members, and deadlines..."></textarea>
+                <div class="action-buttons">
+                    <button class="download-btn" onclick="downloadSpecificNotes('stepsTaken')">Download Notes</button>
+                    <p class="note-message">Your notes will be saved as a .txt file on your device.</p>
+                </div>
+            </section>
+            <section id="assignment-instructions">
+                <h2>Assignment Instructions</h2>
+                <p>Click the button below to access the official ALL 125 Assignment 3 instructions on ClickUP:</p>
+                <button onclick="window.open('https://clickup.up.ac.za/ultra/courses/_181368_1/outline', '_blank')">View Assignment Instructions</button>
+                <div class="tip" style="margin-top: 20px;">
+                    <h4>Key Requirements for ALL 125 Assignment 3</h4>
+                    <ul>
+                        <li>Group size: 3-5 members</li>
+                        <li>Length: Maximum 10 minutes</li>
+                        <li>Include a GenAI-generated image with prompt and translanguaging sentence</li>
+                        <li>Submit PowerPoint outline on ClickUP before deadline</li>
+                        <li>Presentations should be recorded and uploaded, not delivered live in class</li>
                     </ul>
-                </div>
-                <div class="stats-card">
-                    <h3>Team Reflection Questions</h3>
-                    <ol id="teamReflection">
-                        <li>How will your team structure the presentation to cover all evaluation criteria effectively?</li>
-                        <li>How will your team demonstrate how personal, cultural, and disciplinary perspectives shape interpretation of articles?</li>
-                        <li>What strategies will you use to connect your individual articles to the shared theme?</li>
-                    </ol>
-                </div>
-            </section>
-            <section id="visuals">
-                <h2>Visual Aid Guide</h2>
-                <p>Effective visuals strengthen your argument. Follow these guidelines:</p>
-                <div class="language-selector">
-                    <label for="visualsLanguage">Language:</label>
-                    <select id="visualsLanguage" onchange="updateVisualsPlaceholder()">
-                        <option value="en">English</option>
-                        <option value="se">Sepedi</option>
-                    </select>
-                </div>
-                <div class="grid-container">
-                    <div class="grid-item">
-                        <h4>Relevance</h4>
-                        <p id="visualsRelevance">Ensure visuals directly support your key points (e.g., a graph showing unemployment trends to support an argument about economic policies)</p>
-                    </div>
-                    <div class="grid-item">
-                        <h4>Clarity</h4>
-                        <p id="visualsClarity">Avoid clutter: use clear labels, legends, and concise titles. Remove unnecessary elements that don't contribute to your message.</p>
-                    </div>
-                    <div class="grid-item">
-                        <h4>Acknowledgement</h4>
-                        <p id="visualsAcknowledgement">If using AI-generated visuals (e.g., from Canva, ChatGPT), cite the tool used (e.g., "Generated using Canva AI") in the slide notes</p>
-                    </div>
-                </div>
-                <div class="tip">
-                    <h4>Example Implementation</h4>
-                    <p id="visualsExample">A bar chart comparing corruption levels across countries, with a caption: "Data from Transparency International (2023) shows that countries with strong anti-corruption laws (e.g., Botswana) have lower corruption scores, supporting our argument that systemic reforms are effective."</p>
-                </div>
-            </section>
-            <section id="counterarguments">
-                <h2>Argument Comparison</h2>
-                <p>Effectively comparing arguments strengthens your presentation. Follow this structure:</p>
-                <div class="language-selector">
-                    <label for="counterLanguage">Language:</label>
-                    <select id="counterLanguage" onchange="updateCounterPlaceholder()">
-                        <option value="en">English</option>
-                        <option value="se">Sepedi</option>
-                    </select>
-                </div>
-                <div class="grid-container">
-                    <div class="grid-item">
-                        <h4>Identify Similarities</h4>
-                        <p id="counterSimilarities">Find common themes or perspectives across your articles</p>
-                    </div>
-                    <div class="grid-item">
-                        <h4>Highlight Differences</h4>
-                        <p id="counterDifferences">Note how different perspectives approach the same topic</p>
-                    </div>
-                    <div class="grid-item">
-                        <h4>Connect to Theme</h4>
-                        <p id="counterConnection">Explain how these comparisons contribute to understanding your shared theme</p>
-                    </div>
-                </div>
-            </section>
-            <section id="team-coord">
-                <h2>Team Coordination</h2>
-                <p>To ensure equal contribution and effective collaboration:</p>
-                <div class="language-selector">
-                    <label for="teamLanguage">Language:</label>
-                    <select id="teamLanguage" onchange="updateTeamPlaceholder()">
-                        <option value="en">English</option>
-                        <option value="se">Sepedi</option>
-                    </select>
-                </div>
-                <div class="stats-card">
-                    <h3>Best Practices</h3>
-                    <ul class="stats-list" id="teamBestPractices">
-                        <li><strong>Assign specific roles:</strong> research lead, visual designer, scriptwriter, presenter</li>
-                        <li><strong>Track progress:</strong> use a shared document (e.g., Google Docs) to track contributions and deadlines</li>
-                        <li><strong>Regular check-ins:</strong> hold team meetings to review progress and address issues</li>
-                        <li><strong>Peer evaluation:</strong> use evaluation forms to assess each member's input</li>
-                        <li><strong>Clear deadlines:</strong> set individual milestones for each component of the presentation</li>
-                    </ul>
-                </div>
-                <div class="tip">
-                    <h4>Example Workflow</h4>
-                    <p id="teamWorkflow">"Each member will present a section of the argument, with the research lead providing evidence for all sections. A shared timeline ensures all tasks are completed before the deadline. Weekly check-ins will review progress and adjust as needed."</p>
-                </div>
-            </section>
-            <section id="conclusion">
-                <h2>Conclusion Tips</h2>
-                <p>A strong conclusion should:</p>
-                <div class="language-selector">
-                    <label for="conclusionLanguage">Language:</label>
-                    <select id="conclusionLanguage" onchange="updateConclusionPlaceholder()">
-                        <option value="en">English</option>
-                        <option value="se">Sepedi</option>
-                    </select>
-                </div>
-                <div class="grid-container">
-                    <div class="grid-item">
-                        <h4>Summarise Key Points</h4>
-                        <p id="conclusionSummary">Briefly recap the main arguments without introducing new information</p>
-                    </div>
-                    <div class="grid-item">
-                        <h4>Restate Position</h4>
-                        <p id="conclusionPosition">Clearly reiterate your stance on the issue</p>
-                    </div>
-                    <div class="grid-item">
-                        <h4>Memorable Closing</h4>
-                        <p id="conclusionClosing">End with a powerful statement or call to action that resonates with your audience</p>
-                    </div>
-                </div>
-                <div class="tip">
-                    <h4>Example Conclusion</h4>
-                    <p id="conclusionExample">"In conclusion, addressing unemployment requires targeted education reforms and entrepreneurship support. As evidenced by our analysis, these strategies not only reduce joblessness but also foster long-term economic resilience. Let us advocate for policy changes that empower communities and drive sustainable growth."</p>
-                </div>
-            </section>
-            <section id="extra-credit">
-                <h2>GenAI & Translanguaging</h2>
-                <p>Translanguaging involves strategically using multiple languages to enhance communication. Examples:</p>
-                <div class="language-selector">
-                    <label for="extraLanguage">Language:</label>
-                    <select id="extraLanguage" onchange="updateExtraPlaceholder()">
-                        <option value="en">English</option>
-                        <option value="se">Sepedi</option>
-                    </select>
-                </div>
-                <div class="grid-container">
-                    <div class="grid-item">
-                        <h4>GenAI Image Prompt</h4>
-                        <p id="extraPrompt">Create a clear, descriptive prompt for your GenAI image that captures your team's collective theme or response to it</p>
-                    </div>
-                    <div class="grid-item">
-                        <h4>Translanguaging Integration</h4>
-                        <p id="extraTranslanguaging">Include one sentence in a primary language spoken by a group member, along with English interpretation (e.g., "The concept of 'ubuntu' (humanity towards others) underpins our argument for community-driven solutions to corruption")</p>
-                    </div>
-                </div>
-                <div class="tip">
-                    <h4>Key Principle</h4>
-                    <p id="extraPrinciple">Ensure translanguaging is purposeful and supports understanding, not just for show. Cite sources where language use is relevant to your argument.</p>
                 </div>
             </section>
         </div>
     </div>
-    
     <div class="counter-container">
         <div id="sfcpwkrslcxda85r16suqcljwtz34gh61rj"></div>
         <script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=pwkrslcxda85r16suqcljwtz34gh61rj&down=async" async></script>
         <noscript><a href="https://www.freecounterstat.com" title="website counter"><img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=pwkrslcxda85r16suqcljwtz34gh61rj" border="0" title="website counter" alt="website counter"></a></noscript>
     </div>
-
     <script>
-        // Sepedi translations
-        const seTranslations = {
-            notes: "Ea hloka go fihla dipolotiki tsa go tlogela. Bua le kgwebo e ka nna lekgwetšo. Ea tlogela dipolotiki tsa go tlogela le dipolelo tsa go tlogela.",
-            individualReflection: [
-                "Ke kgwebo ke kgwebo efe e ka nna lekgwetšo, le go nna le kgwebo e kgolo ka lekgwetšo?"
-            ],
-            teamReflection: [
-                "Go lebaka la go tsamaya ka thuto, eka go tsamaya ka lebaka la go tsamaya ka thuto?",
-                "Go lebaka la go tsamaya ka thuto, eka go tsamaya ka lebaka la go tsamaya ka thuto?",
-                "Go lebaka la go tsamaya ka thuto, eka go tsamaya ka lebaka la go tsamaya ka thuto?"
-            ],
-            visualsRelevance: "Go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bo......<think>
-
-            ],
-            visualsClarity: "Go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le boh......<think>
-
-            ],
-            visualsAcknowledgement: "Go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le bohloko go ba le......
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav a');
+            const sections = document.querySelectorAll('.main section');
+            const progressFill = document.getElementById('progress');
+            window.addEventListener('scroll', function() {
+                const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+                progressFill.style.width = scrollPercent + '%';
+            });
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    navLinks.forEach(navLink => navLink.classList.remove('active'));
+                    this.classList.add('active');
+                    sections.forEach(sec => sec.classList.remove('active'));
+                    document.getElementById(targetId).classList.add('active');
+                    document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+            document.getElementById('topic-finalisation').classList.add('active');
+            progressFill.style.width = '0%';
+        });
+        function downloadSpecificNotes(id) {
+            const notes = document.getElementById(id).value;
+            if (!notes.trim()) {
+                alert('Please enter notes before downloading.');
+                return;
+            }
+            const blob = new Blob([notes], { type: 'text/plain' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = `${id}_notes.txt`;
+            document.body.appendChild(a);
+            a.click();
+            setTimeout(() => {
+                document.body.removeChild(a);
+                URL.revokeObjectURL(a.href);
+            }, 0);
+            alert(`Notes for ${id} downloaded successfully as ${id}_notes.txt`);
+        }
+    </script>
+</body>
+</html>
